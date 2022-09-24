@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <script>
+        var query = window.location.search;
+        var usp = new URLSearchParams(query);
+        document.write("Student Name: ",usp.get("name"),"<br>");
+        document.write("Password: ",usp.get("password"),"<br>");
+        document.write("Confirm Password: ",usp.get("repassword"),"<br>");
+        document.write("Gender: ",usp.get("gender"),"<br>");
+        document.write("Qualification: ",usp.get("qualification"),"<br>");
+        document.write("Mobile No: ",usp.get("mobile"),"<br>");
+        document.write("Email ID: ",usp.get("email"),"<br>");
+    </script>
+</body>
+</html>

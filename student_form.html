@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+    <link rel="shortcut icon" href="./ICO/Elephant.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./form_script.js"></script>
+  </head>
+  <body>
+    <h1 align="center">Student Registration Form</h1>
+    <form
+      action="student_details.html"
+      method="get"
+      onsubmit="return submitform()"
+      onreset="resetform()"
+      target="_blank"
+    >
+      <!-- Name Module -->
+      <label for="name">Enter Student Name:</label>
+      <br />
+      <input type="text" name="name" id="name" placeholder="Enter Your Name" />
+      <span id="namebug"></span>
+      <br /><br />
+      <!-- Password Module -->
+      <label for="password">Enter Password:</label>
+      <br />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter your password"
+      />
+      <span id="passwordbug"></span>
+      <br /><br />
+      <!-- Resubmit Password Module -->
+      <label for="repassword">Confirm Password:</label>
+      <br />
+      <input
+        type="password"
+        name="repassword"
+        id="repassword"
+        placeholder="Confirm your password"
+      />
+      <span id="repasswordbug"></span>
+      <br /><br />
+
+      <!-- Gender Module -->
+
+      <label>Select your gender</label><br />
+      <label for="gender">Male</label>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="gender">Female</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="gender">Other</label>
+      <input type="radio" name="gender" id="other" value="other" />
+      <span id="genderbug"></span>
+      <br /><br />
+
+      <!-- Qualification Module -->
+
+      <label for="qualification">Select your qualification</label>
+      <select name="qualification" id="qualification">
+        <option value="-1">-- SELECT --</option>
+        <option value="se">Secondary</option>
+        <option value="hse">Higher Secondary</option>
+        <option value="grad">Graduate</option>
+        <option value="pgrad">Post Graduate</option>
+        <option value="phd">Doctorate</option>
+        <option value="postdoc">Post Doctorate</option>
+      </select>
+      <span id="qualificationbug"></span>
+      <br /><br />
+
+      <!-- Mobile No Module -->
+
+      <label for="mobile">Enter your mobile no</label>
+      <input
+        type="number"
+        name="mobile"
+        id="mobile"
+        placeholder="Enter your mobile no"
+      />
+      <span id="mobilebug"></span>
+      <br /><br />
+
+      <!-- Email ID Module -->
+
+      <label for="email">Enter your email ID:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email ID"
+      />
+      <span id="emailbug"></span>
+      <br /><br />
+
+      <input type="submit" value="SUBMIT" />
+      <input type="reset" value="RESET" />
+    </form>
+  </body>
+</html>
